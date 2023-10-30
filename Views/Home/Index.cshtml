@@ -1,0 +1,8 @@
+﻿@model MyViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="d-flex">
+    <div>@await Html.PartialAsync("_Registration", @Model.User)</div>
+    <div>@await Html.PartialAsync("_Login", @Model.Login)</div>
+</div>
